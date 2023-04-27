@@ -3,7 +3,7 @@ import EventItem from "./EventItem";
 import classes from "./EventList.module.css"
 
 const EventList = (props) => {
-  console.log(props.events);
+ 
   return (
     <div>
       <ul className={classes.list}>

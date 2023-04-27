@@ -3,11 +3,17 @@ import React from "react";
 import classes from "./Button.module.css";
 
 const Button = (props) => {
-  return (
-    <Link href={props.link} className={classes.btn}>
-      {props.children}
-    </Link>
-  );
+  if(props.link){
+    return (
+      <Link href={props.link} className={classes.btn}>
+        {props.children}
+      </Link>
+    );
+  }
+  return(
+    <button className={classes.btn} onClick={props.onclick}>{props.children}</button>
+  )
+ 
 };
 
 export default Button;

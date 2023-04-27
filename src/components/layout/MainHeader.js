@@ -1,12 +1,11 @@
 import React from "react";
-import classes from "./Header.module.css";
 import Link from "next/link";
-
-const Header = () => {
+import classes from "./MainHeader.module.css";
+const MainHeader = () => {
   return (
     <header className={classes.header}>
       <div className={classes.logo}>
-        <Link href="/">Next Events</Link>
+        <Link href="/">Up Coming Events</Link>
       </div>
       <nav className={classes.navigation}>
         <ul>
@@ -19,4 +18,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainHeader;
